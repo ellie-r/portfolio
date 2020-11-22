@@ -304,6 +304,14 @@ footer {
   }
 }
 
+.attribution {
+  font-size: 0.8rem;
+  a {
+    text-decoration: none;
+    color: $brightColour;
+  }
+}
+
 @media only screen and (max-width: 991.98px)  {
   .row {
     padding: 0 {
@@ -311,7 +319,6 @@ footer {
       left: 25px;
       right: 25px;
     }
-
   }
   .top {
     padding-top: 60px;
