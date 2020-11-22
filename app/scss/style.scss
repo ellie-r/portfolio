@@ -15,18 +15,21 @@ $brightColour: #f58f00;
 .svg #XMLID_3_ {
   fill: var(--background);
 }
+
 body {
   background-color: var(--background);
   color: var(--text);
   font-family: 'Titillium Web', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .navbar-custom {
   color: var(--text);
-  font-size: 1.4rem;
+  font-size: 1rem;
   background-color: var(--background);
+  height: 60px;
 }
+
 nav i {
   color: var(--text);
 }
@@ -52,6 +55,10 @@ nav li {
   }
 }
 
+.section {
+  padding-top: 60px;
+}
+
 .top {
   height: 100vh;
   .intro {
@@ -71,7 +78,7 @@ nav li {
       font-size: 2rem;
     }
     p {
-      font-size: 1.4rem;
+      //font-size: 1.2rem;
     }
   }
 }
@@ -99,17 +106,14 @@ nav li {
 }
 
 .social-button.linkedin:hover {
-  //transform: scale(1.3);
   color: $brightColour;
 }
 
 .social-button.github:hover {
-  //transform: scale(1.3);
   color: $brightColour;
 }
 
 .social-button.email:hover {
-  //transform: scale(1.3);
   color: $brightColour;
 }
 
@@ -117,15 +121,12 @@ nav li {
   color: $brightColour;
 }
 
-
-
 .moreContent {
   position: absolute;
   bottom: 0;
 }
 
 .aboutSection {
-  //margin: 50px;
   align-self: center;
   img {
     width: 100%;
@@ -134,7 +135,7 @@ nav li {
   }
   .text {
     align-self: center;
-    font-size: 1.4rem;
+    //font-size: 1.2rem;
   }
 
 }
@@ -208,7 +209,7 @@ nav li {
   margin: 25px 0 10px;
   padding: 0;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 5px;
   li {
@@ -240,13 +241,7 @@ nav li {
   }
 }
 
-footer {
-  font-size: 0.5rem;
-  a {
-    text-decoration: none;
-    color: #3e03a3;
-  }
-}
+
 
 
 .toggle {
@@ -304,13 +299,21 @@ footer {
   }
 }
 
-.attribution {
-  font-size: 0.8rem;
-  a {
-    text-decoration: none;
-    color: $brightColour;
+
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+    a {
+      text-decoration: none;
+      color: $brightColour;
+    }
+  p {
+    margin: 0;
   }
 }
+
+
 
 @media only screen and (max-width: 991.98px)  {
   .row {
