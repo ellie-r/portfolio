@@ -121,6 +121,21 @@ nav li {
   color: $brightColour;
 }
 
+.cvLink {
+  justify-content: center;
+  padding: 12px 16px;
+  button {
+    color: $brightColour;
+    border: 2px solid $brightColour;
+    //font-family: 'Roboto Mono', monospace;
+    &:hover {
+      background-color: rgba($brightColour, 0.3);
+      color: $brightColour;
+    }
+  }
+
+}
+
 .moreContent {
   position: absolute;
   bottom: 0;
