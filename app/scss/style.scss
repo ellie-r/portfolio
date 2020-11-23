@@ -301,7 +301,18 @@ nav li {
   }
 }
 
-
+.bottomContactSection {
+  margin-top: 100px;
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    color: $brightColour;
+    border-bottom: 4px solid $brightColour;
+  }
+}
 
 footer {
   font-size: 0.7rem;
