@@ -204,10 +204,6 @@ nav li {
   }
 }
 
-.hide {
-  display: none;
-}
-
 .bullets {
   display: flex;
   justify-content: space-evenly;
@@ -255,13 +251,11 @@ nav li {
   }
   input {
     display: none;
-
     &:checked {
       ~ label:after {
         background-image: url('../assets/sun.svg');
         transform: translate3d(1.2rem, 0, 0);
       }
-
       ~ label:before {
         transform: translate3d(-84%, 23%, 0) scale(1);
         transition: background 300ms ease-in-out, opacity 30ms ease-in-out, transform 400ms ease-in-out;
@@ -296,7 +290,7 @@ nav li {
 }
 
 .alignBackToTop {
-  align-self: end;
+  align-self: flex-end;
 }
 
 footer {
@@ -312,24 +306,8 @@ footer {
 }
 
 @media only screen and (max-width: 991.98px)  {
-  .row {
-    padding: 0 {
-      top: 100px;
-      left: 25px;
-      right: 25px;
-    }
-  }
-  .top {
-    padding-top: 60px;
-  }
   .moreContent {
     opacity: 0;
-  }
-  .bottomContactSection {
-    text-align: center;
-  }
-  .alignBackToTop {
-    align-self: center;
   }
 }
 
@@ -337,7 +315,13 @@ footer {
   .top {
     height: auto;
   }
+  .bottomContactSection {
+    text-align: center;
+  }
   .alignBackToTop {
     align-self: center;
+  }
+  .aboutSection .text {
+    text-align: center;
   }
 }
