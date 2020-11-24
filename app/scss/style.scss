@@ -1,19 +1,16 @@
 :root {
-  --background: rgb(118,125,122);
-  --text: white ;
+  --background: #767D7A;
+  --text: #FFFFFF ;
 }
 
 $brightColour: #f58f00;
+
 .header {
   display: flex;
   justify-content: space-evenly;
   margin: auto {
     top: 10px;
   }
-}
-
-.svg #XMLID_3_ {
-  fill: var(--background);
 }
 
 body {
@@ -34,14 +31,8 @@ nav i {
   color: var(--text);
 }
 
-.navbar-brand {
-  border: 1px solid $brightColour;
-  padding: 8px;
-  color: $brightColour;
-}
-
 nav ul {
-  background-color: rgba(var(--background),0.8);
+  background-color: var(--background);
 }
 
 nav li {
@@ -50,6 +41,20 @@ nav li {
     text-decoration: none;
     color: var(--text);
     &:hover {
+      color: $brightColour;
+    }
+  }
+}
+
+.cvLink {
+  justify-content: center;
+  padding: 12px 16px;
+  background-color: var(--background);
+  button {
+    color: $brightColour;
+    border: 2px solid $brightColour;
+    &:hover {
+      background-color: rgba($brightColour, 0.3);
       color: $brightColour;
     }
   }
@@ -68,7 +73,6 @@ nav li {
     align-self: center;
     text-align: center;
       span {
-        //color: #3e03a3;
         color: $brightColour;
       }
     h1 {
@@ -76,9 +80,6 @@ nav li {
     }
     h2 {
       font-size: 2rem;
-    }
-    p {
-      //font-size: 1.2rem;
     }
   }
 }
@@ -96,7 +97,6 @@ nav li {
   border-radius: 30%;
   color: var(--text);
   overflow: hidden;
-
 }
 
 .social-button i {
@@ -121,20 +121,7 @@ nav li {
   color: $brightColour;
 }
 
-.cvLink {
-  justify-content: center;
-  padding: 12px 16px;
-  button {
-    color: $brightColour;
-    border: 2px solid $brightColour;
-    //font-family: 'Roboto Mono', monospace;
-    &:hover {
-      background-color: rgba($brightColour, 0.3);
-      color: $brightColour;
-    }
-  }
 
-}
 
 .moreContent {
   position: absolute;
@@ -150,9 +137,7 @@ nav li {
   }
   .text {
     align-self: center;
-    //font-size: 1.2rem;
   }
-
 }
 
 .projectSection {
@@ -178,9 +163,7 @@ nav li {
 
 .projectDescription {
   border-radius: 8px;
-
 }
-
 
 .browser {
   padding-top: 20px;
@@ -197,7 +180,6 @@ nav li {
     width: 100px;
     background-repeat: no-repeat;
   }
-
   img {
     width: 100%;
     border-bottom-left-radius: 5px;
@@ -243,60 +225,48 @@ nav li {
   }
 }
 
-
-
-
 .toggle {
   align-self: center;
   position: absolute;
   top: 14px;
   right: 15px;
   z-index: 99999;
-}
-.toggle {
-  position: absolute;
-  top: 14px;
-  right: 15px;
-}
-
-.toggle label {
-  position: relative;
-  display: block;
-  width: 3.2rem;
-  height: 1.9rem;
-  border: 2px solid var(--text);
-  border-radius: 100px;
-  cursor: pointer;
-
-  &::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 1px;
-    margin: auto;
-    width: 24px;
-    height: 24px;
-    background-image: url('../assets/moon.svg');
-    content: "";
+  label {
+    position: relative;
+    display: block;
+    width: 3.2rem;
+    height: 1.9rem;
+    border: 2px solid var(--text);
     border-radius: 100px;
-    transition: background 200ms linear,
-    transform 200ms ease-in-out 100ms;
-  }
-}
-
-.toggle input {
-  display: none;
-
-  &:checked {
-    ~ label:after {
-      background-image: url('../assets/sun.svg');
-      transform: translate3d(1.2rem, 0, 0);
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1px;
+      margin: auto;
+      width: 24px;
+      height: 24px;
+      background-image: url('../assets/moon.svg');
+      content: "";
+      border-radius: 100px;
+      transition: background 200ms linear, transform 200ms ease-in-out 100ms;
     }
+  }
+  input {
+    display: none;
 
-    ~ label:before {
-      transform: translate3d(-84%, 23%, 0) scale(1);
-      transition: background 300ms ease-in-out, opacity 30ms ease-in-out, transform 400ms ease-in-out;
-      opacity: 1;
+    &:checked {
+      ~ label:after {
+        background-image: url('../assets/sun.svg');
+        transform: translate3d(1.2rem, 0, 0);
+      }
+
+      ~ label:before {
+        transform: translate3d(-84%, 23%, 0) scale(1);
+        transition: background 300ms ease-in-out, opacity 30ms ease-in-out, transform 400ms ease-in-out;
+        opacity: 1;
+      }
     }
   }
 }
@@ -323,23 +293,23 @@ nav li {
       color: $brightColour;
     }
   }
-
 }
 
+.alignBackToTop {
+  align-self: end;
+}
 
 footer {
   font-size: 0.7rem;
   text-align: center;
-    a {
-      text-decoration: none;
-      color: $brightColour;
-    }
+  a {
+    text-decoration: none;
+    color: $brightColour;
+  }
   p {
     margin: 0;
   }
 }
-
-
 
 @media only screen and (max-width: 991.98px)  {
   .row {
@@ -355,11 +325,13 @@ footer {
   .moreContent {
     opacity: 0;
   }
-
 }
 
 @media only screen and (max-width: 767.98px) {
   .top {
     height: auto;
+  }
+  .alignBackToTop {
+    align-self: center;
   }
 }
