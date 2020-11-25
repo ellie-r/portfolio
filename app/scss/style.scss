@@ -124,7 +124,13 @@ nav li {
 .moreContent {
   position: absolute;
   bottom: 0;
+  text-decoration: none;
+  color: var(--text);
+  &:hover {
+    color: $brightColour;
+  }
 }
+
 
 .aboutSection {
   align-self: center;
