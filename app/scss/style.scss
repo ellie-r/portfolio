@@ -69,9 +69,9 @@ nav li {
 }
 
 .toggle {
-  position: absolute;
-  top: 1.15rem;
-  right: 1rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 99999;
   label {
     position: relative;
@@ -317,6 +317,7 @@ footer {
   .moreContent {
     opacity: 0;
   }
+
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -334,5 +335,8 @@ footer {
   }
   .aboutSection .text {
     text-align: center;
+  }
+  .toggle {
+    top: 1rem;
   }
 }
