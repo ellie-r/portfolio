@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellie Robinson</title>
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -14,42 +14,39 @@
     <script src="js/dist/app.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#AboutMe">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-                <div class="cvLink">
-                    <a href="assets/EllieRobinsonCV.pdf" target="_blank">
-                        <button type="button" class="btn">View CV</button>
-                    </a>
-                </div>
-            </div>
-
-        </nav>
-        <div class="fixed-top">
-            <div class="toggle">
-                <input type="checkbox" id="toggle">
-                <label for="toggle">
-                </label>
-            </div>
+<nav class="navbar navbar-expand-md fixed-top navbar-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars fa-2x"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#AboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+        </ul>
+        <div class="cvLink">
+            <a href="assets/EllieRobinsonCV.pdf" target="_blank">
+                <button type="button" class="btn">View CV</button>
+            </a>
         </div>
-        <div class="row top">
+    </div>
+    <div class="toggle">
+        <input type="checkbox" id="toggle">
+        <label for="toggle">
+        </label>
+    </div>
+</nav>
+    <div class="container-fluid">
+        <div class="row pt-5 landingPage">
             <div class="col-12 col-md-6 intro">
                 <svg
                         xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -471,7 +468,7 @@
 </svg>
                 <a href="#AboutMe" class="moreContent"><i class="fas fa-angle-down fa-5x"></i></a>
             </div>
-            <div class="col-12 col-md-6 intro-text">
+            <div class="col-12 col-md-6 d-flex flex-column intro-text">
                 <h2>
                     Welcome!
                 </h2>
@@ -496,42 +493,44 @@
                         <i class="fas fa-envelope-square"></i>
                     </a>
                 </div>
-
             </div>
-        </div>
+            </div>
     </div>
     <div class="container">
         <div class="row aboutSection section" id="AboutMe">
-            <div class="col-12 col-md-9 text-justify">
-                <p>
-                    I graduated from the University of Exeter in 2019 with a 2:1 in Maths.
-                    After graduating I worked for a while as a Junior Data Analyst where I decided that solving problems
-                    with code was the favourite part of my day and I wanted to pursue it as a career!
-                </p>
-                <p>
-                    I decided to join iO Academy (prev. Mayden Academy),
-                    a 16 week intensive course, to learn all the skills required for the industry.
-                </p>
-                <p>
-                    I like reading sci-fi and fantasy books, binging Netflix shows and playing with my two miniature dachshunds.
-                </p>
-            </div>
-            <div class="col-12 col-md-3">
-                <img src="assets/IMG_7406.jpeg" alt="ellie at graduation">
-            </div>
+                <div class="col-12 col-md-9 text-justify align-self-center">
+                    <p>
+                        I graduated from the University of Exeter in 2019 with a 2:1 in Maths.
+                        After graduating I worked for a while as a Junior Data Analyst where I decided that solving problems
+                        with code was the favourite part of my day and I wanted to pursue it as a career!
+                    </p>
+                    <p>
+                        I decided to join iO Academy (prev. Mayden Academy),
+                        a 16 week intensive course, to learn all the skills required for the industry.
+                    </p>
+                    <p>
+                        I like reading sci-fi and fantasy books, binging Netflix shows and playing with my two miniature dachshunds.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="assets/IMG_7406.jpeg" alt="ellie at graduation">
+                </div>
         </div>
-        <div class="section projectSection" id="Projects">
+    </div>
+        <div class="container section projectSection" id="Projects">
+            <div class="row">
             <div class="col-12">
-                <h3>Projects</h3>
-                <p>Have a look at some of the projects I've completed so far.</p>
+                    <h3>Projects</h3>
+                    <p>Have a look at some of the projects I've completed so far.</p>
+                </div>
             </div>
-            <div class="row pt-2">
-                <div class="col-12 col-lg-6 pt-5">
+            <div class="row">
+            <div class="col-12 col-md-6 pt-5">
                     <div class="browser">
                         <img src="assets/robot-stores.png" alt="picture of wine collection application">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5 projectInfo text-center">
+                <div class="col-12 col-md-6 pt-5 projectInfo text-center">
                     <h3>E Commerce Store</h3>
                     <div class="projectDescription">
                         <p>
@@ -557,12 +556,12 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 pt-5">
+                <div class="col-12 col-md-6 pt-5">
                     <div class="browser">
                         <img src="assets/wine-collection-app.png" alt="picture of wine collection application">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5 projectInfo text-center">
+                <div class="col-12 col-md-6 pt-5 projectInfo text-center">
                     <h3>Collector App</h3>
                     <div class="projectDescription">
                         <p>
@@ -586,12 +585,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5">
+                <div class="col-12 col-md-6 pt-5">
                     <div class="browser">
                         <img src="assets/aptitude-test-app.png" alt="picture of aptitude test application">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5 projectInfo text-center">
+                <div class="col-12 col-md-6 pt-5 projectInfo text-center">
                     <h3>Aptitude Test</h3>
                     <div class="projectDescription">
                         <p>
@@ -612,13 +611,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5">
+                <div class="col-12 col-md-6 pt-5">
                     <div class="browser">
                         <img src="assets/maze-game.png" alt="picture of maze game application">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 pt-5 projectInfo text-center">
-                    <h3>Maze Game: Jarver's Crypt</h3>
+                <div class="col-12 col-md-6 pt-5 projectInfo text-center">
+                    <h3>Maze Game</h3>
                     <div class="projectDescription">
                         <p>
                             A game built with vanilla JavaScript, HTML and CSS.
@@ -641,7 +640,9 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-5">
+
+        <div class="container pt-5">
+            <div class="row">
             <div class="col-12 col-md-8 bottomContactSection" id="contact">
                 <div>
                     <h3>Get In Touch</h3>
@@ -657,11 +658,12 @@
                     <p>Back to top for socials.</p>
                 </div>
             </div>
+            </div>
         </div>
-    </div>
-    <footer class="pt-5 pb-1">
-        <p class="copyright">Ellie Robinson &#169; 2020</p>
-        <div class="d-flex p-1 justify-content-center flex-wrap">
+
+    <footer class="container pt-5 pb-1">
+        <p class="col-12 copyright">Ellie Robinson &#169; 2020</p>
+        <div class="col-12 d-flex p-1 justify-content-center flex-wrap">
             <div class="attribution p-1">
                 <a href="https://iconscout.com/illustrations/lady" target="_blank">Lady working on desk Illustration</a> by <a href="https://iconscout.com/contributors/realvjy" target="_blank">Vijay Verma</a>
             </div>

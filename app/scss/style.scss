@@ -18,13 +18,17 @@ body {
   color: var(--text);
   font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.row {
+  margin: auto;
 }
 
 .navbar-custom {
   color: var(--text);
   font-size: 1rem;
   background-color: var(--background);
-  height: 60px;
 }
 
 nav i {
@@ -60,12 +64,15 @@ nav li {
   }
 }
 
+.landingPage {
+  height: 100vh;
+}
+
 .toggle {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 1.15rem;
+  right: 1rem;
   z-index: 99999;
-  padding: 1rem;
   label {
     position: relative;
     display: block;
@@ -108,8 +115,8 @@ nav li {
   padding-top: 60px;
 }
 
-.top {
-  height: 100vh;
+//.top {
+//  height: 100vh;
   .intro {
     align-self: center;
   }
@@ -126,7 +133,7 @@ nav li {
       font-size: 2rem;
     }
   }
-}
+//}
 
 .social-menu {
   display: flex;
@@ -234,6 +241,7 @@ nav li {
 .projectTechList {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 25px 0 10px;
   padding: 0;
   list-style: none;
@@ -312,7 +320,7 @@ footer {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .top {
+  .landingPage {
     height: auto;
   }
   .projectSection {
