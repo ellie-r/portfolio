@@ -115,25 +115,23 @@ nav li {
   padding-top: 60px;
 }
 
-//.top {
-//  height: 100vh;
-  .intro {
-    align-self: center;
+.intro {
+  align-self: center;
+}
+
+.intro-text {
+  align-self: center;
+  text-align: center;
+  span {
+    color: $brightColour;
   }
-  .intro-text {
-    align-self: center;
-    text-align: center;
-      span {
-        color: $brightColour;
-      }
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
+  h1 {
+    font-size: 4rem;
   }
-//}
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 .social-menu {
   display: flex;
@@ -181,7 +179,6 @@ nav li {
     color: $brightColour;
   }
 }
-
 
 .aboutSection {
   align-self: center;
@@ -317,7 +314,6 @@ footer {
   .moreContent {
     opacity: 0;
   }
-
 }
 
 @media only screen and (max-width: 767.98px) {
