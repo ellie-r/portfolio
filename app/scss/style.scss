@@ -18,7 +18,10 @@ body {
   color: var(--text);
   font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
-  overflow-x: hidden;
+}
+
+.overflow-hidden {
+  width: 100vw;
 }
 
 .row {
@@ -314,6 +317,9 @@ footer {
   .moreContent {
     opacity: 0;
   }
+  nav {
+    width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -334,5 +340,6 @@ footer {
   }
   .toggle {
     top: 1rem;
+    right: 1.75rem;
   }
 }
