@@ -210,6 +210,14 @@ nav li {
 
 .projectDescription {
   border-radius: 8px;
+  a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      color: $brightColour;
+    }
+  }
 }
 
 .browser {
