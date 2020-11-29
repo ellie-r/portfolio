@@ -20,11 +20,18 @@ body {
   font-size: 1rem;
 }
 
+.overflow-hidden {
+  width: 100vw;
+}
+
+.row {
+  margin: auto;
+}
+
 .navbar-custom {
   color: var(--text);
   font-size: 1rem;
   background-color: var(--background);
-  height: 60px;
 }
 
 nav i {
@@ -60,12 +67,15 @@ nav li {
   }
 }
 
+.landingPage {
+  height: 100vh;
+}
+
 .toggle {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 99999;
-  padding: 1rem;
   label {
     position: relative;
     display: block;
@@ -108,23 +118,21 @@ nav li {
   padding-top: 60px;
 }
 
-.top {
-  height: 100vh;
-  .intro {
-    align-self: center;
+.intro {
+  align-self: center;
+}
+
+.intro-text {
+  align-self: center;
+  text-align: center;
+  span {
+    color: $brightColour;
   }
-  .intro-text {
-    align-self: center;
-    text-align: center;
-      span {
-        color: $brightColour;
-      }
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 
@@ -174,7 +182,6 @@ nav li {
     color: $brightColour;
   }
 }
-
 
 .aboutSection {
   align-self: center;
@@ -234,6 +241,7 @@ nav li {
 .projectTechList {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 25px 0 10px;
   padding: 0;
   list-style: none;
@@ -309,10 +317,13 @@ footer {
   .moreContent {
     opacity: 0;
   }
+  nav {
+    width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .top {
+  .landingPage {
     height: auto;
   }
   .projectSection {
@@ -326,5 +337,9 @@ footer {
   }
   .aboutSection .text {
     text-align: center;
+  }
+  .toggle {
+    top: 1rem;
+    right: 1.75rem;
   }
 }
