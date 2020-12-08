@@ -140,6 +140,10 @@ nav li {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  .JS-app p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
 }
 
 .social-button {
